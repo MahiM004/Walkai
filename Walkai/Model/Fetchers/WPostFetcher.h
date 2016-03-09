@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface WPostFetcher : NSObject
+@interface WPostFetcher : WFetcher
+
++ (NSURL *)URLforPostToWire;
 
 @end

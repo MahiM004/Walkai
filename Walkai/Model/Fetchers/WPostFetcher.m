@@ -10,4 +10,8 @@
 
 @implementation WPostFetcher
 
++ (NSURL *)URLforPostToWire {
+    return [self URLForQuery:[NSString stringWithFormat:@"%@json/?method=wire.post",BASEURL]];
+}
+
 @end

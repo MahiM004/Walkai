@@ -16,9 +16,13 @@
 }
 
 
++ (NSURL *)URLforUserRegistration {
+    return [self URLForQuery:[NSString stringWithFormat:@"%@json/?method=register.user", BASEURL]];
+}
 
-
-
++ (NSURL *)URLforGetUserProfile {
+    return [self URLForQuery:[NSString stringWithFormat:@"%@json/?method=get.userdetails",BASEURL]];
+}
 
 
 

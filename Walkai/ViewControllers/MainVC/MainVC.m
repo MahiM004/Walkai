@@ -7,9 +7,10 @@
 //
 
 #import "MainVC.h"
+#import "PostMessageCell.h"
+#import "WUserFetcher.h"
 
-
-@interface MainVC ()
+@interface MainVC () <UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UIButton *menuBtn;
 @property (weak, nonatomic) IBOutlet UIButton *rightBtn;
@@ -21,6 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    /*
     UIImage *icon = [UIImage imageWithIcon:@"fa-bars" backgroundColor:[UIColor clearColor] iconColor:[UIColor whiteColor] andSize:CGSizeMake(26, 26)];
     [_menuBtn setImage:icon forState:UIControlStateNormal];
     
@@ -29,7 +31,26 @@
     
     UIImage *searchIcon = [UIImage imageWithIcon:@"fa-search" backgroundColor:[UIColor clearColor] iconColor:[UIColor whiteColor] andSize:CGSizeMake(20, 20)];
     [_searchBtn setImage:searchIcon forState:UIControlStateNormal];
+     */
+    
+    
 }
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    return 1;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    if (indexPath.row == 0) {
+        PostMessageCell * postCell = [tableView dequeueReusableCellWithIdentifier:@"postCell" forIndexPath:indexPath];
+        if (!postCell) {
+            postCell = [[PostMessageCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"postCell"];
+        }
+        return postCell;
+//    }
+}
+
 
 
 @end

@@ -24,31 +24,56 @@
     _userNameTF.layer.borderColor = colorW.CGColor;
     _passwordTF.layer.borderWidth = 1.0f;
     _passwordTF.layer.borderColor = colorW.CGColor;
-    
-    
+    _userNameTF.text = @"maheshmasetti.ios@gmail.com";
+    _passwordTF.text = @"mahi504";
 }
 
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [_userNameTF becomeFirstResponder];
+}
 
 - (IBAction)signBtnAction:(id)sender {
+    if (_userNameTF.text.length == 0) {
+        [WViewUtility showAlert:@"Failed" msg:@"Check your Email"];
+        return;
+    }
+    
+    if (_passwordTF.text.length == 0) {
+        [WViewUtility showAlert:@"Failed" msg:@"Check your Password"];
+        return;
+    }
+    
+    [_passwordTF resignFirstResponder];
     
     NSString * urlString = [NSString stringWithFormat:@"%@",[WUserFetcher URLforUserAuthentication]];
-    NSDictionary * params = (@{@"email":_userNameTF.text,
+    NSDictionary * params = (@{
+                               @"email":_userNameTF.text,
                                @"password":_passwordTF.text
                                });
 
-    [WConnectionHelper postDataToURL:urlString withParameters:params contentType:kContentTypeJSON success:^(id response) {
-        
-        NSLog(@"%@",response);
-        [self performSegueWithIdentifier:@"mainVC" sender:self];
+    [WConnectionHelper postDataToURL:urlString withParameters:params contentType:kContentTypeJSON success:^(NSDictionary * response) {
+        NSDictionary * resultDic = [response valueForKey:@"result"];
+        if ([[resultDic valueForKey:@"success"]boolValue]) {
+            WSettings * settings = [WSettings sessionSettings];
+            [settings initUserID:resultDic[@"userid"] withEmail:_userNameTF.text withPassword:_passwordTF.text withName:nil];
+            NSLog(@"%@",response);
+            [self performSegueWithIdentifier:@"mainVC" sender:self];
+        }
+        else {
+            WSettings * settings = [WSettings sessionSettings];
+            [settings clearSession];
+            [WViewUtility showAlert:@"Some thing wrong" msg:@"Please Try Again"];
+        }
     } failed:^(NSError *error) {
-        
+        NSLog(@"%@",error);
+        [WViewUtility showAlert:@"Some thing wrong" msg:@"Please Try Again"];
     }];
 }
+
 - (IBAction)tfEndEfiting:(id)sender {
     [self.view endEditing:YES];
 }
-
-
 
 -(IBAction)dismissVC:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];

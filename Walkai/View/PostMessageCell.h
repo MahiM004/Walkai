@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface PostMessageCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIView *postMessageView;
+@property (weak, nonatomic) IBOutlet UIButton *postMessageBtn;
 
 @end

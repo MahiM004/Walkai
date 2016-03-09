@@ -16,13 +16,13 @@ static ContentType kContentTypeJSON = @"application/json", kContentTypeHTMLOrTex
 + (void)postDataToURL:(NSString *)url
        withParameters:(NSDictionary *)param
           contentType:(ContentType)contentType
-              success:(void (^) (id response))success
+              success:(void (^) (NSDictionary * response))success
                failed:(void (^) (NSError *error))failed;
 
 + (void)getDataFromURL:(NSString *)url
         withParameters:(NSDictionary *)param
            contentType:(ContentType)contentType
-               success:(void (^) (id response))success
+               success:(void (^) (NSDictionary * response))success
                 failed:(void (^) (NSError *error))failed;
 
 

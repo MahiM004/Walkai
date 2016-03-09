@@ -10,4 +10,5 @@
 
 @interface WViewUtility : NSObject
 
++ (UIAlertView*)showAlert:(NSString *)title msg:(NSString *)messege;
 @end

@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum RegisterType {
+    RegisterTypeStudent,
+    RegisterTypeProfessional,
+}RegisterType;
+
 @interface WSignUpScreen : UIViewController
 
+@property RegisterType registerType;
 @end

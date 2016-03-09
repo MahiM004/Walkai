@@ -17,6 +17,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
+   
+
+
+    if ([[WSettings sessionSettings]isUserLoggedIn]) {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        UIViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:@"mainVC"];
+        self.window.rootViewController = viewController;
+        [self.window makeKeyAndVisible];
+    }
+    
     return YES;
 }
 

@@ -7,25 +7,112 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		140653DD1C894D150096E885 /* WSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 140653DC1C894D150096E885 /* WSettings.m */; };
+		1418263B1C855D2600B6B9FE /* FAImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 141826341C855D2600B6B9FE /* FAImageView.m */; };
+		1418263C1C855D2600B6B9FE /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 141826361C855D2600B6B9FE /* NSString+FontAwesome.m */; };
+		1418263D1C855D2600B6B9FE /* UIFont+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 141826381C855D2600B6B9FE /* UIFont+FontAwesome.m */; };
+		1418263E1C855D2600B6B9FE /* UIImage+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 1418263A1C855D2600B6B9FE /* UIImage+FontAwesome.m */; };
+		141826421C85625C00B6B9FE /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 141826401C855D3400B6B9FE /* FontAwesome.ttf */; };
+		141826441C85627C00B6B9FE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141826431C85627C00B6B9FE /* CoreGraphics.framework */; };
+		141826461C85628F00B6B9FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141826451C85628F00B6B9FE /* Foundation.framework */; };
+		141826481C85629500B6B9FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141826471C85629500B6B9FE /* UIKit.framework */; };
+		1418265D1C8573A300B6B9FE /* WConnectionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1418265A1C8573A300B6B9FE /* WConnectionHelper.m */; };
+		1418265E1C8573A300B6B9FE /* WViewUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 1418265C1C8573A300B6B9FE /* WViewUtility.m */; };
+		141826611C8573B900B6B9FE /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 141826601C8573B900B6B9FE /* MainVC.m */; };
+		141826661C8573C600B6B9FE /* WSigninScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 141826631C8573C600B6B9FE /* WSigninScreen.m */; };
+		141826671C8573C600B6B9FE /* WSignUpScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 141826651C8573C600B6B9FE /* WSignUpScreen.m */; };
+		1418266C1C8573D100B6B9FE /* WLaunchPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 141826691C8573D100B6B9FE /* WLaunchPageController.m */; };
+		1418266D1C8573D100B6B9FE /* WLaunchScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 1418266B1C8573D100B6B9FE /* WLaunchScreen.m */; };
+		141826721C8573FC00B6B9FE /* WFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 1418266F1C8573FC00B6B9FE /* WFetcher.m */; };
+		141826731C8573FC00B6B9FE /* WUserFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 141826711C8573FC00B6B9FE /* WUserFetcher.m */; };
+		1418267A1C8575D700B6B9FE /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 141826791C8575D700B6B9FE /* User.m */; };
+		141826811C85766E00B6B9FE /* User+AppServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 141826801C85766E00B6B9FE /* User+AppServer.m */; };
+		14758A691C86D89000A9DC78 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 14758A681C86D89000A9DC78 /* menu.png */; };
+		14758A6C1C86D90000A9DC78 /* rightMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 14758A6A1C86D90000A9DC78 /* rightMenu.png */; };
+		14758A6D1C86D90000A9DC78 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 14758A6B1C86D90000A9DC78 /* search.png */; };
+		14758A6F1C86DA6800A9DC78 /* logoWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = 14758A6E1C86DA6800A9DC78 /* logoWhite.png */; };
+		148700831C8EA14F002F39F3 /* WPostWireVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 148700821C8EA14F002F39F3 /* WPostWireVC.m */; };
+		148700861C8EACBE002F39F3 /* WPostFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 148700851C8EACBE002F39F3 /* WPostFetcher.m */; };
 		1489DEE61C7ECA4500375F43 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1489DEE51C7ECA4500375F43 /* main.m */; };
 		1489DEE91C7ECA4500375F43 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1489DEE81C7ECA4500375F43 /* AppDelegate.m */; };
-		1489DEEC1C7ECA4500375F43 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1489DEEB1C7ECA4500375F43 /* ViewController.m */; };
 		1489DEEF1C7ECA4500375F43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1489DEED1C7ECA4500375F43 /* Main.storyboard */; };
 		1489DEF11C7ECA4500375F43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1489DEF01C7ECA4500375F43 /* Assets.xcassets */; };
 		1489DEF41C7ECA4500375F43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1489DEF21C7ECA4500375F43 /* LaunchScreen.storyboard */; };
+		14978FE11C7EE616007F3C53 /* img_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 14978FDC1C7EE616007F3C53 /* img_01.png */; };
+		14978FE21C7EE616007F3C53 /* img_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 14978FDD1C7EE616007F3C53 /* img_02.png */; };
+		14978FE31C7EE616007F3C53 /* img_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 14978FDE1C7EE616007F3C53 /* img_03.png */; };
+		14978FE41C7EE616007F3C53 /* img_04.png in Resources */ = {isa = PBXBuildFile; fileRef = 14978FDF1C7EE616007F3C53 /* img_04.png */; };
+		14978FE51C7EE616007F3C53 /* logo_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 14978FE01C7EE616007F3C53 /* logo_blue.png */; };
+		14978FF91C7F013B007F3C53 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14978FF81C7F013B007F3C53 /* QuartzCore.framework */; };
+		14D4B0F91C8D50F60075CC87 /* PostMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D4B0F81C8D50F60075CC87 /* PostMessageCell.m */; };
+		C9962258CAA9E439C951FF02 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1BE01C5F4CFB36AD8A290C5 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		140653DB1C894D150096E885 /* WSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSettings.h; sourceTree = "<group>"; };
+		140653DC1C894D150096E885 /* WSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSettings.m; sourceTree = "<group>"; };
+		141826331C855D2600B6B9FE /* FAImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FAImageView.h; path = Resorces/FontAwesome/FAImageView.h; sourceTree = "<group>"; };
+		141826341C855D2600B6B9FE /* FAImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FAImageView.m; path = Resorces/FontAwesome/FAImageView.m; sourceTree = "<group>"; };
+		141826351C855D2600B6B9FE /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+FontAwesome.h"; path = "Resorces/FontAwesome/NSString+FontAwesome.h"; sourceTree = "<group>"; };
+		141826361C855D2600B6B9FE /* NSString+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+FontAwesome.m"; path = "Resorces/FontAwesome/NSString+FontAwesome.m"; sourceTree = "<group>"; };
+		141826371C855D2600B6B9FE /* UIFont+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIFont+FontAwesome.h"; path = "Resorces/FontAwesome/UIFont+FontAwesome.h"; sourceTree = "<group>"; };
+		141826381C855D2600B6B9FE /* UIFont+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+FontAwesome.m"; path = "Resorces/FontAwesome/UIFont+FontAwesome.m"; sourceTree = "<group>"; };
+		141826391C855D2600B6B9FE /* UIImage+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+FontAwesome.h"; path = "Resorces/FontAwesome/UIImage+FontAwesome.h"; sourceTree = "<group>"; };
+		1418263A1C855D2600B6B9FE /* UIImage+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+FontAwesome.m"; path = "Resorces/FontAwesome/UIImage+FontAwesome.m"; sourceTree = "<group>"; };
+		141826401C855D3400B6B9FE /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome.ttf; path = Resorces/FontAwesome/Resources/FontAwesome.ttf; sourceTree = "<group>"; };
+		141826431C85627C00B6B9FE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		141826451C85628F00B6B9FE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		141826471C85629500B6B9FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		141826591C8573A300B6B9FE /* WConnectionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WConnectionHelper.h; path = WHelpers/WConnectionHelper.h; sourceTree = "<group>"; };
+		1418265A1C8573A300B6B9FE /* WConnectionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WConnectionHelper.m; path = WHelpers/WConnectionHelper.m; sourceTree = "<group>"; };
+		1418265B1C8573A300B6B9FE /* WViewUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WViewUtility.h; path = WHelpers/WViewUtility.h; sourceTree = "<group>"; };
+		1418265C1C8573A300B6B9FE /* WViewUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WViewUtility.m; path = WHelpers/WViewUtility.m; sourceTree = "<group>"; };
+		1418265F1C8573B900B6B9FE /* MainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainVC.h; path = ViewControllers/MainVC/MainVC.h; sourceTree = "<group>"; };
+		141826601C8573B900B6B9FE /* MainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainVC.m; path = ViewControllers/MainVC/MainVC.m; sourceTree = "<group>"; };
+		141826621C8573C600B6B9FE /* WSigninScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSigninScreen.h; path = ViewControllers/LoginSignUp/WSigninScreen.h; sourceTree = "<group>"; };
+		141826631C8573C600B6B9FE /* WSigninScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSigninScreen.m; path = ViewControllers/LoginSignUp/WSigninScreen.m; sourceTree = "<group>"; };
+		141826641C8573C600B6B9FE /* WSignUpScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSignUpScreen.h; path = ViewControllers/LoginSignUp/WSignUpScreen.h; sourceTree = "<group>"; };
+		141826651C8573C600B6B9FE /* WSignUpScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSignUpScreen.m; path = ViewControllers/LoginSignUp/WSignUpScreen.m; sourceTree = "<group>"; };
+		141826681C8573D100B6B9FE /* WLaunchPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WLaunchPageController.h; path = ViewControllers/Launch/WLaunchPageController.h; sourceTree = "<group>"; };
+		141826691C8573D100B6B9FE /* WLaunchPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WLaunchPageController.m; path = ViewControllers/Launch/WLaunchPageController.m; sourceTree = "<group>"; };
+		1418266A1C8573D100B6B9FE /* WLaunchScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WLaunchScreen.h; path = ViewControllers/Launch/WLaunchScreen.h; sourceTree = "<group>"; };
+		1418266B1C8573D100B6B9FE /* WLaunchScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WLaunchScreen.m; path = ViewControllers/Launch/WLaunchScreen.m; sourceTree = "<group>"; };
+		1418266E1C8573FC00B6B9FE /* WFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WFetcher.h; path = Model/Fetchers/WFetcher.h; sourceTree = "<group>"; };
+		1418266F1C8573FC00B6B9FE /* WFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WFetcher.m; path = Model/Fetchers/WFetcher.m; sourceTree = "<group>"; };
+		141826701C8573FC00B6B9FE /* WUserFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WUserFetcher.h; path = Model/Fetchers/WUserFetcher.h; sourceTree = "<group>"; };
+		141826711C8573FC00B6B9FE /* WUserFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WUserFetcher.m; path = Model/Fetchers/WUserFetcher.m; sourceTree = "<group>"; };
+		141826781C8575D700B6B9FE /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = Model/PrimaryClasses/User.h; sourceTree = "<group>"; };
+		141826791C8575D700B6B9FE /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = Model/PrimaryClasses/User.m; sourceTree = "<group>"; };
+		1418267F1C85766E00B6B9FE /* User+AppServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "User+AppServer.h"; path = "Model/Categories/User+AppServer.h"; sourceTree = "<group>"; };
+		141826801C85766E00B6B9FE /* User+AppServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "User+AppServer.m"; path = "Model/Categories/User+AppServer.m"; sourceTree = "<group>"; };
+		14758A681C86D89000A9DC78 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu.png; path = images/menu.png; sourceTree = "<group>"; };
+		14758A6A1C86D90000A9DC78 /* rightMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rightMenu.png; path = images/rightMenu.png; sourceTree = "<group>"; };
+		14758A6B1C86D90000A9DC78 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = search.png; path = images/search.png; sourceTree = "<group>"; };
+		14758A6E1C86DA6800A9DC78 /* logoWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logoWhite.png; path = images/logoWhite.png; sourceTree = "<group>"; };
+		148700811C8EA14F002F39F3 /* WPostWireVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WPostWireVC.h; path = ViewControllers/PostScreen/WPostWireVC.h; sourceTree = "<group>"; };
+		148700821C8EA14F002F39F3 /* WPostWireVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WPostWireVC.m; path = ViewControllers/PostScreen/WPostWireVC.m; sourceTree = "<group>"; };
+		148700841C8EACBE002F39F3 /* WPostFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WPostFetcher.h; path = Model/Fetchers/WPostFetcher.h; sourceTree = "<group>"; };
+		148700851C8EACBE002F39F3 /* WPostFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WPostFetcher.m; path = Model/Fetchers/WPostFetcher.m; sourceTree = "<group>"; };
 		1489DEE11C7ECA4500375F43 /* Walkai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Walkai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1489DEE51C7ECA4500375F43 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1489DEE71C7ECA4500375F43 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1489DEE81C7ECA4500375F43 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1489DEEA1C7ECA4500375F43 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1489DEEB1C7ECA4500375F43 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1489DEEE1C7ECA4500375F43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1489DEF01C7ECA4500375F43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1489DEF31C7ECA4500375F43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1489DEF51C7ECA4500375F43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14978FDC1C7EE616007F3C53 /* img_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img_01.png; path = images/img_01.png; sourceTree = "<group>"; };
+		14978FDD1C7EE616007F3C53 /* img_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img_02.png; path = images/img_02.png; sourceTree = "<group>"; };
+		14978FDE1C7EE616007F3C53 /* img_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img_03.png; path = images/img_03.png; sourceTree = "<group>"; };
+		14978FDF1C7EE616007F3C53 /* img_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img_04.png; path = images/img_04.png; sourceTree = "<group>"; };
+		14978FE01C7EE616007F3C53 /* logo_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_blue.png; path = images/logo_blue.png; sourceTree = "<group>"; };
+		14978FEF1C7EF249007F3C53 /* Walkai.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Walkai.pch; sourceTree = "<group>"; };
+		14978FF81C7F013B007F3C53 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		14D4B0F71C8D50F60075CC87 /* PostMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PostMessageCell.h; path = View/PostMessageCell.h; sourceTree = "<group>"; };
+		14D4B0F81C8D50F60075CC87 /* PostMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PostMessageCell.m; path = View/PostMessageCell.m; sourceTree = "<group>"; };
+		1AEB3A07A69F7BE7C7876B0E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		1C07929FDE1BFB08FB89A5A2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E1BE01C5F4CFB36AD8A290C5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +120,139 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				141826481C85629500B6B9FE /* UIKit.framework in Frameworks */,
+				141826461C85628F00B6B9FE /* Foundation.framework in Frameworks */,
+				141826441C85627C00B6B9FE /* CoreGraphics.framework in Frameworks */,
+				14978FF91C7F013B007F3C53 /* QuartzCore.framework in Frameworks */,
+				C9962258CAA9E439C951FF02 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		141826281C85568900B6B9FE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1418265F1C8573B900B6B9FE /* MainVC.h */,
+				141826601C8573B900B6B9FE /* MainVC.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		141826321C855D1500B6B9FE /* FontAwesome */ = {
+			isa = PBXGroup;
+			children = (
+				1418263F1C855D2900B6B9FE /* Resources */,
+				141826331C855D2600B6B9FE /* FAImageView.h */,
+				141826341C855D2600B6B9FE /* FAImageView.m */,
+				141826351C855D2600B6B9FE /* NSString+FontAwesome.h */,
+				141826361C855D2600B6B9FE /* NSString+FontAwesome.m */,
+				141826371C855D2600B6B9FE /* UIFont+FontAwesome.h */,
+				141826381C855D2600B6B9FE /* UIFont+FontAwesome.m */,
+				141826391C855D2600B6B9FE /* UIImage+FontAwesome.h */,
+				1418263A1C855D2600B6B9FE /* UIImage+FontAwesome.m */,
+			);
+			name = FontAwesome;
+			sourceTree = "<group>";
+		};
+		1418263F1C855D2900B6B9FE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				141826401C855D3400B6B9FE /* FontAwesome.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		141826491C8569CB00B6B9FE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				141826591C8573A300B6B9FE /* WConnectionHelper.h */,
+				1418265A1C8573A300B6B9FE /* WConnectionHelper.m */,
+				1418265B1C8573A300B6B9FE /* WViewUtility.h */,
+				1418265C1C8573A300B6B9FE /* WViewUtility.m */,
+				140653DB1C894D150096E885 /* WSettings.h */,
+				140653DC1C894D150096E885 /* WSettings.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		1418264D1C856E9B00B6B9FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				141826741C8575A900B6B9FE /* PrimaryClasses */,
+				1418267B1C85762F00B6B9FE /* Categories */,
+				1418264E1C856EA700B6B9FE /* Fetcher */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1418264E1C856EA700B6B9FE /* Fetcher */ = {
+			isa = PBXGroup;
+			children = (
+				1418266E1C8573FC00B6B9FE /* WFetcher.h */,
+				1418266F1C8573FC00B6B9FE /* WFetcher.m */,
+				141826701C8573FC00B6B9FE /* WUserFetcher.h */,
+				141826711C8573FC00B6B9FE /* WUserFetcher.m */,
+				148700841C8EACBE002F39F3 /* WPostFetcher.h */,
+				148700851C8EACBE002F39F3 /* WPostFetcher.m */,
+			);
+			name = Fetcher;
+			sourceTree = "<group>";
+		};
+		141826741C8575A900B6B9FE /* PrimaryClasses */ = {
+			isa = PBXGroup;
+			children = (
+				141826781C8575D700B6B9FE /* User.h */,
+				141826791C8575D700B6B9FE /* User.m */,
+			);
+			name = "Primary\U0010Classes";
+			sourceTree = "<group>";
+		};
+		1418267B1C85762F00B6B9FE /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				1418267F1C85766E00B6B9FE /* User+AppServer.h */,
+				141826801C85766E00B6B9FE /* User+AppServer.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		146173591C8553B000F1EF3A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				141826321C855D1500B6B9FE /* FontAwesome */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1461735A1C8553D200F1EF3A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				148700801C8EA11B002F39F3 /* Post Screen */,
+				141826281C85568900B6B9FE /* Main */,
+				14978FF01C7EF58C007F3C53 /* LoginSignUp */,
+				14978FE71C7EF09D007F3C53 /* Launch */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		148700801C8EA11B002F39F3 /* Post Screen */ = {
+			isa = PBXGroup;
+			children = (
+				148700811C8EA14F002F39F3 /* WPostWireVC.h */,
+				148700821C8EA14F002F39F3 /* WPostWireVC.m */,
+			);
+			name = "Post Screen";
+			sourceTree = "<group>";
+		};
 		1489DED81C7ECA4500375F43 = {
 			isa = PBXGroup;
 			children = (
 				1489DEE31C7ECA4500375F43 /* Walkai */,
+				14978FFA1C7F0144007F3C53 /* Frameworks */,
 				1489DEE21C7ECA4500375F43 /* Products */,
+				76FA73A6F633F0C568D54B66 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,12 +269,12 @@
 			children = (
 				1489DEE71C7ECA4500375F43 /* AppDelegate.h */,
 				1489DEE81C7ECA4500375F43 /* AppDelegate.m */,
-				1489DEEA1C7ECA4500375F43 /* ViewController.h */,
-				1489DEEB1C7ECA4500375F43 /* ViewController.m */,
 				1489DEED1C7ECA4500375F43 /* Main.storyboard */,
-				1489DEF01C7ECA4500375F43 /* Assets.xcassets */,
-				1489DEF21C7ECA4500375F43 /* LaunchScreen.storyboard */,
-				1489DEF51C7ECA4500375F43 /* Info.plist */,
+				1418264D1C856E9B00B6B9FE /* Model */,
+				14D4B0F61C8D50C90075CC87 /* View */,
+				1461735A1C8553D200F1EF3A /* ViewControllers */,
+				141826491C8569CB00B6B9FE /* Helpers */,
+				146173591C8553B000F1EF3A /* Resources */,
 				1489DEE41C7ECA4500375F43 /* Supporting Files */,
 			);
 			path = Walkai;
@@ -74,9 +283,82 @@
 		1489DEE41C7ECA4500375F43 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				14978FD31C7EE5EE007F3C53 /* images */,
+				1489DEF21C7ECA4500375F43 /* LaunchScreen.storyboard */,
+				1489DEF01C7ECA4500375F43 /* Assets.xcassets */,
+				1489DEF51C7ECA4500375F43 /* Info.plist */,
 				1489DEE51C7ECA4500375F43 /* main.m */,
+				14978FEF1C7EF249007F3C53 /* Walkai.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14978FD31C7EE5EE007F3C53 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				14758A6E1C86DA6800A9DC78 /* logoWhite.png */,
+				14758A6A1C86D90000A9DC78 /* rightMenu.png */,
+				14758A6B1C86D90000A9DC78 /* search.png */,
+				14758A681C86D89000A9DC78 /* menu.png */,
+				14978FDC1C7EE616007F3C53 /* img_01.png */,
+				14978FDD1C7EE616007F3C53 /* img_02.png */,
+				14978FDE1C7EE616007F3C53 /* img_03.png */,
+				14978FDF1C7EE616007F3C53 /* img_04.png */,
+				14978FE01C7EE616007F3C53 /* logo_blue.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		14978FE71C7EF09D007F3C53 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				141826681C8573D100B6B9FE /* WLaunchPageController.h */,
+				141826691C8573D100B6B9FE /* WLaunchPageController.m */,
+				1418266A1C8573D100B6B9FE /* WLaunchScreen.h */,
+				1418266B1C8573D100B6B9FE /* WLaunchScreen.m */,
+			);
+			name = Launch;
+			sourceTree = "<group>";
+		};
+		14978FF01C7EF58C007F3C53 /* LoginSignUp */ = {
+			isa = PBXGroup;
+			children = (
+				141826621C8573C600B6B9FE /* WSigninScreen.h */,
+				141826631C8573C600B6B9FE /* WSigninScreen.m */,
+				141826641C8573C600B6B9FE /* WSignUpScreen.h */,
+				141826651C8573C600B6B9FE /* WSignUpScreen.m */,
+			);
+			name = LoginSignUp;
+			sourceTree = "<group>";
+		};
+		14978FFA1C7F0144007F3C53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				141826471C85629500B6B9FE /* UIKit.framework */,
+				141826451C85628F00B6B9FE /* Foundation.framework */,
+				141826431C85627C00B6B9FE /* CoreGraphics.framework */,
+				14978FF81C7F013B007F3C53 /* QuartzCore.framework */,
+				E1BE01C5F4CFB36AD8A290C5 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		14D4B0F61C8D50C90075CC87 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				14D4B0F71C8D50F60075CC87 /* PostMessageCell.h */,
+				14D4B0F81C8D50F60075CC87 /* PostMessageCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		76FA73A6F633F0C568D54B66 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C07929FDE1BFB08FB89A5A2 /* Pods.debug.xcconfig */,
+				1AEB3A07A69F7BE7C7876B0E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +368,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1489DEF81C7ECA4500375F43 /* Build configuration list for PBXNativeTarget "Walkai" */;
 			buildPhases = (
+				64B14AC5A6FE1A1EE8DA02D6 /* Check Pods Manifest.lock */,
 				1489DEDD1C7ECA4500375F43 /* Sources */,
 				1489DEDE1C7ECA4500375F43 /* Frameworks */,
 				1489DEDF1C7ECA4500375F43 /* Resources */,
+				473D42FF8A115ECE8E2AFFDE /* Embed Pods Frameworks */,
+				0A94AC858C5F81FA3E199B75 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,22 +421,98 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				141826421C85625C00B6B9FE /* FontAwesome.ttf in Resources */,
+				14758A6C1C86D90000A9DC78 /* rightMenu.png in Resources */,
+				14978FE51C7EE616007F3C53 /* logo_blue.png in Resources */,
+				14978FE41C7EE616007F3C53 /* img_04.png in Resources */,
+				14758A6F1C86DA6800A9DC78 /* logoWhite.png in Resources */,
 				1489DEF41C7ECA4500375F43 /* LaunchScreen.storyboard in Resources */,
+				14978FE21C7EE616007F3C53 /* img_02.png in Resources */,
+				14978FE31C7EE616007F3C53 /* img_03.png in Resources */,
+				14758A6D1C86D90000A9DC78 /* search.png in Resources */,
+				14758A691C86D89000A9DC78 /* menu.png in Resources */,
 				1489DEF11C7ECA4500375F43 /* Assets.xcassets in Resources */,
+				14978FE11C7EE616007F3C53 /* img_01.png in Resources */,
 				1489DEEF1C7ECA4500375F43 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A94AC858C5F81FA3E199B75 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		473D42FF8A115ECE8E2AFFDE /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64B14AC5A6FE1A1EE8DA02D6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1489DEDD1C7ECA4500375F43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1489DEEC1C7ECA4500375F43 /* ViewController.m in Sources */,
+				1418263C1C855D2600B6B9FE /* NSString+FontAwesome.m in Sources */,
+				148700831C8EA14F002F39F3 /* WPostWireVC.m in Sources */,
+				141826611C8573B900B6B9FE /* MainVC.m in Sources */,
+				141826811C85766E00B6B9FE /* User+AppServer.m in Sources */,
+				141826661C8573C600B6B9FE /* WSigninScreen.m in Sources */,
+				1418267A1C8575D700B6B9FE /* User.m in Sources */,
+				1418266C1C8573D100B6B9FE /* WLaunchPageController.m in Sources */,
+				1418263D1C855D2600B6B9FE /* UIFont+FontAwesome.m in Sources */,
+				1418265D1C8573A300B6B9FE /* WConnectionHelper.m in Sources */,
+				1418265E1C8573A300B6B9FE /* WViewUtility.m in Sources */,
+				141826671C8573C600B6B9FE /* WSignUpScreen.m in Sources */,
+				1418266D1C8573D100B6B9FE /* WLaunchScreen.m in Sources */,
+				14D4B0F91C8D50F60075CC87 /* PostMessageCell.m in Sources */,
+				141826731C8573FC00B6B9FE /* WUserFetcher.m in Sources */,
+				140653DD1C894D150096E885 /* WSettings.m in Sources */,
+				148700861C8EACBE002F39F3 /* WPostFetcher.m in Sources */,
+				141826721C8573FC00B6B9FE /* WFetcher.m in Sources */,
 				1489DEE91C7ECA4500375F43 /* AppDelegate.m in Sources */,
+				1418263B1C855D2600B6B9FE /* FAImageView.m in Sources */,
 				1489DEE61C7ECA4500375F43 /* main.m in Sources */,
+				1418263E1C855D2600B6B9FE /* UIImage+FontAwesome.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,23 +620,35 @@
 		};
 		1489DEF91C7ECA4500375F43 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C07929FDE1BFB08FB89A5A2 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Walkai/Walkai.pch;
 				INFOPLIST_FILE = Walkai/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MCA140.Walkai;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		1489DEFA1C7ECA4500375F43 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AEB3A07A69F7BE7C7876B0E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Walkai/Walkai.pch;
 				INFOPLIST_FILE = Walkai/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MCA140.Walkai;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -298,6 +671,7 @@
 				1489DEFA1C7ECA4500375F43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

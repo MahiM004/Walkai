@@ -10,4 +10,17 @@
 
 @interface WSettings : NSObject
 
++ (instancetype)sessionSettings;
+
+- (NSString *)email;
+- (NSString *)password;
+- (NSString *)fullName;
+- (NSString *)userID;
+
+- (void)clearSession;
+
+- (void)initUserID:(NSString*)userID withEmail:(NSString*)email withPassword:(NSString*)password withName:(NSString*)fName;
+
+- (BOOL)isUserLoggedIn;
+
 @end

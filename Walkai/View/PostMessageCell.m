@@ -10,4 +10,9 @@
 
 @implementation PostMessageCell
 
+- (void)awakeFromNib {
+    _postMessageView.layer.borderColor = colorW.CGColor;
+}
+
+
 @end

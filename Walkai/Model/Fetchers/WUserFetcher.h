@@ -11,7 +11,8 @@
 @interface WUserFetcher : WFetcher
 
 + (NSURL *)URLforUserAuthentication;
-
++ (NSURL *)URLforUserRegistration;
++ (NSURL *)URLforGetUserProfile;
 
 
 @end

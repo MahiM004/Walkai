@@ -10,7 +10,11 @@
 
 @implementation WConnectionHelper
 
-+ (void)postDataToURL:(NSString *)url withParameters:(NSDictionary *)param contentType:(ContentType)contentType success:(void (^)(id))success failed:(void (^)(NSError *))failed {
++ (void)postDataToURL:(NSString *)url
+       withParameters:(NSDictionary *)param
+          contentType:(ContentType)contentType
+              success:(void (^) (NSDictionary * response))success
+               failed:(void (^) (NSError *error))failed {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     AFHTTPResponseSerializer *serializer = [AFHTTPResponseSerializer serializer];
     serializer.acceptableContentTypes = [NSSet setWithObject:contentType];
@@ -27,7 +31,11 @@
     }];
 }
 
-+ (void)getDataFromURL:(NSString *)url withParameters:(NSDictionary *)param contentType:(ContentType)contentType success:(void (^)(id))success failed:(void (^)(NSError *))failed {
++ (void)getDataFromURL:(NSString *)url
+        withParameters:(NSDictionary *)param
+           contentType:(ContentType)contentType
+               success:(void (^) (NSDictionary * response))success
+                failed:(void (^) (NSError *error))failed {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     AFHTTPResponseSerializer *serializer = [AFHTTPResponseSerializer serializer];
     serializer.acceptableContentTypes = [NSSet setWithObject:contentType];
