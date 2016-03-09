@@ -27,6 +27,8 @@ static NSString *const kUserId = @"legacySessionToken";
 static NSString *const kPassword = @"password";
 static NSString *const kEmail = @"email";
 static NSString *const kFullName = @"fullName";
+static NSString *const kAuthtoken = @"authTtoken";
+static NSString *const kApikey = @"apikey";
 
 - (NSString*)userID {
     return [[NSUserDefaults standardUserDefaults] stringForKey:kUserId];
@@ -40,6 +42,14 @@ static NSString *const kFullName = @"fullName";
     return [[NSUserDefaults standardUserDefaults] stringForKey:kPassword];
 }
 
+- (NSString*)token {
+    return [[NSUserDefaults standardUserDefaults] stringForKey:kAuthtoken];
+}
+
+- (NSString*)apikey {
+    return [[NSUserDefaults standardUserDefaults] stringForKey:kApikey];
+}
+
 - (NSString*)fullName {
     return [[NSUserDefaults standardUserDefaults] stringForKey:kFullName];
 }
@@ -50,10 +60,12 @@ static NSString *const kFullName = @"fullName";
     [defaults setObject:@"" forKey:kUserId];
     [defaults setObject:@"" forKey:kEmail];
     [defaults setObject:@"" forKey:kPassword];
+    [defaults setObject:@"" forKey:kAuthtoken];
+    [defaults setObject:@"" forKey:kApikey];
     [defaults synchronize];
 }
 
-- (void)initUserID:(NSString*)userID withEmail:(NSString*)email withPassword:(NSString*)password withName:(NSString*)fName {
+- (void)initUserID:(NSString*)userID withEmail:(NSString*)email withPassword:(NSString*)password withName:(NSString*)fName withResponse:(NSDictionary *)response {
     NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
     
     if (userID != nil)
@@ -64,7 +76,10 @@ static NSString *const kFullName = @"fullName";
         [defaults setObject:password forKey:kPassword];
     if (fName != nil)
         [defaults setObject:fName forKey:kFullName];
-    
+    if ([response valueForKey:@"token"] != [NSNull null])
+        [defaults setObject:response[@"token"] forKey:kAuthtoken];
+    if ([response valueForKey:@"apikey"] != [NSNull null])
+        [defaults setObject:response[@"apikey"] forKey:kApikey];
     [defaults synchronize];
 }
 

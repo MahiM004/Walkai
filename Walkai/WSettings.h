@@ -16,10 +16,12 @@
 - (NSString *)password;
 - (NSString *)fullName;
 - (NSString *)userID;
+- (NSString*)token;
+- (NSString*)apikey;
 
 - (void)clearSession;
 
-- (void)initUserID:(NSString*)userID withEmail:(NSString*)email withPassword:(NSString*)password withName:(NSString*)fName;
+- (void)initUserID:(NSString*)userID withEmail:(NSString*)email withPassword:(NSString*)password withName:(NSString*)fName withResponse:(NSDictionary*)response;
 
 - (BOOL)isUserLoggedIn;
 

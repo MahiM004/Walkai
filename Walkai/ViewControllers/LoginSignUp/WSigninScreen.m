@@ -56,7 +56,7 @@
         NSDictionary * resultDic = [response valueForKey:@"result"];
         if ([[resultDic valueForKey:@"success"]boolValue]) {
             WSettings * settings = [WSettings sessionSettings];
-            [settings initUserID:resultDic[@"userid"] withEmail:_userNameTF.text withPassword:_passwordTF.text withName:nil];
+            [settings initUserID:resultDic[@"userid"] withEmail:_userNameTF.text withPassword:_passwordTF.text withName:nil withResponse:resultDic];
             NSLog(@"%@",response);
             [self performSegueWithIdentifier:@"mainVC" sender:self];
         }
