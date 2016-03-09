@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  WSignUpScreen.h
 //  Walkai
 //
 //  Created by Mahesh_iOS on 25/02/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface WSignUpScreen : UIViewController
 
 @end
-

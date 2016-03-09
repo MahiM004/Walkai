@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  WLoginScreen.h
 //  Walkai
 //
 //  Created by Mahesh_iOS on 25/02/16.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+@interface WLoginScreen : UIViewController
 
 @end
-
