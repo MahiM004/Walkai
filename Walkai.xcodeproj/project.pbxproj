@@ -44,6 +44,7 @@
 		14978FE41C7EE616007F3C53 /* img_04.png in Resources */ = {isa = PBXBuildFile; fileRef = 14978FDF1C7EE616007F3C53 /* img_04.png */; };
 		14978FE51C7EE616007F3C53 /* logo_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 14978FE01C7EE616007F3C53 /* logo_blue.png */; };
 		14978FF91C7F013B007F3C53 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14978FF81C7F013B007F3C53 /* QuartzCore.framework */; };
+		14A31EE51C8FFF0100079513 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14A31EE41C8FFF0100079513 /* Default-568h@2x.png */; };
 		14D4B0F91C8D50F60075CC87 /* PostMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D4B0F81C8D50F60075CC87 /* PostMessageCell.m */; };
 		C9962258CAA9E439C951FF02 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1BE01C5F4CFB36AD8A290C5 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -108,6 +109,7 @@
 		14978FE01C7EE616007F3C53 /* logo_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_blue.png; path = images/logo_blue.png; sourceTree = "<group>"; };
 		14978FEF1C7EF249007F3C53 /* Walkai.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Walkai.pch; sourceTree = "<group>"; };
 		14978FF81C7F013B007F3C53 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		14A31EE41C8FFF0100079513 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		14D4B0F71C8D50F60075CC87 /* PostMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PostMessageCell.h; path = View/PostMessageCell.h; sourceTree = "<group>"; };
 		14D4B0F81C8D50F60075CC87 /* PostMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PostMessageCell.m; path = View/PostMessageCell.m; sourceTree = "<group>"; };
 		1AEB3A07A69F7BE7C7876B0E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 		1489DED81C7ECA4500375F43 = {
 			isa = PBXGroup;
 			children = (
+				14A31EE41C8FFF0100079513 /* Default-568h@2x.png */,
 				1489DEE31C7ECA4500375F43 /* Walkai */,
 				14978FFA1C7F0144007F3C53 /* Frameworks */,
 				1489DEE21C7ECA4500375F43 /* Products */,
@@ -426,6 +429,7 @@
 				14978FE51C7EE616007F3C53 /* logo_blue.png in Resources */,
 				14978FE41C7EE616007F3C53 /* img_04.png in Resources */,
 				14758A6F1C86DA6800A9DC78 /* logoWhite.png in Resources */,
+				14A31EE51C8FFF0100079513 /* Default-568h@2x.png in Resources */,
 				1489DEF41C7ECA4500375F43 /* LaunchScreen.storyboard in Resources */,
 				14978FE21C7EE616007F3C53 /* img_02.png in Resources */,
 				14978FE31C7EE616007F3C53 /* img_03.png in Resources */,
