@@ -10,5 +10,17 @@
 
 @interface WViewUtility : NSObject
 
++ (NSArray*)getProfileArray;
+
++ (NSMutableArray*)getArrayOfNumbersWithLimit:(int)limit;
+
++ (NSArray*)getMonthsArray;
+
++ (NSMutableArray*)getYearArray;
+
++ (NSArray*)getSchoolArrayForProfile;
+
++ (NSArray*)getActivitiesTyepArray;
+
 + (UIAlertView*)showAlert:(NSString *)title msg:(NSString *)messege;
 @end

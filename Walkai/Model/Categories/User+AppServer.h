@@ -10,4 +10,5 @@
 
 @interface User (AppServer)
 
++ (User *)userWithAppServerInfo:(NSDictionary *)userDictionary forUser:(User *)user;
 @end

@@ -12,7 +12,10 @@
 @interface WLaunchScreen () <UIPageViewControllerDataSource,UIPageViewControllerDelegate>
 
 @property (retain, nonatomic) UIPageViewController *pageController;
+
+
 @property (strong, nonatomic) NSArray * pages;
+
 @property (weak, nonatomic) IBOutlet UIPageControl * pageControl;
 @property (weak, nonatomic) IBOutlet UIButton *signUpBtn;
 @property (weak, nonatomic) IBOutlet UIButton *signInBtn;
@@ -46,10 +49,9 @@
     [_pageControl setCurrentPage:0];
     
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(pageChanged:) name:@"pageChange" object:nil];
-    if (IS_IPHONE_4_OR_LESS) {
+    if (IS_IPHONE_4_OR_LESS)
         [_pgControlBottomMargin setConstant:-5];
-    }
-    
+
 }
 
 -(void)viewWillAppear:(BOOL)animated{

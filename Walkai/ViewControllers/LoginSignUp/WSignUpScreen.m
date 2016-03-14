@@ -8,13 +8,16 @@
 
 #import "WSignUpScreen.h"
 #import "WUserFetcher.h"
+#import <IQKeyboardManager.h>
 
-#define VIEW_HEIGHT 630
+#define VIEW_HEIGHT 650
 
-@interface WSignUpScreen ()
+@interface WSignUpScreen () <UIPickerViewDataSource,UIPickerViewDelegate,UITextFieldDelegate>
 {
-    UIDatePicker *datePicker;
+    NSInteger getSelectedTf;
 }
+@property (strong, nonatomic) UIPickerView *pickerAge;
+@property NSMutableArray * pickerArray;
 
 @property (weak, nonatomic) IBOutlet UIScrollView *parentScrollView;
 
@@ -55,6 +58,9 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+    
+//    [[IQKeyboardManager sharedManager]disableToolbarInViewControllerClass:[WSignUpScreen class]];
+    
     //Default
     _professHeight.constant = 0;
     self.viewHeight.constant -= 135;
@@ -65,10 +71,21 @@
     _registerBtn.layer.borderColor = [UIColor whiteColor].CGColor;
     [_registerBtn setBackgroundColor:colorW];
     
-    _tfBMonth.text = @"12";
-    _tfBYear.text = @"1992";
-    _tfBDay.text = @"12";
-    _tfStudent.text = @"No Study";
+    self.pickerArray = [[NSMutableArray alloc]init];
+    //uipickerview for age
+    self.pickerAge = [[UIPickerView alloc] init];
+    self.pickerAge.showsSelectionIndicator = YES;
+    self.pickerAge.delegate = self;
+    self.pickerAge.dataSource = self;
+    self.tfStudent.inputView = self.pickerAge;
+    self.tfBDay.inputView = self.pickerAge;
+    self.tfBMonth.inputView = self.pickerAge;
+    self.tfBYear.inputView = self.pickerAge;
+    
+    self.tfStudent.text = @"School";
+    self.tfBDay.text = @"1";
+    self.tfBMonth.text = @"Jan";
+    self.tfBYear.text = @"1960";
 }
 
 -(IBAction)studentBtnAction:(UIButton*)sender {
@@ -153,13 +170,13 @@
 
 - (IBAction)openOptions:(UIButton*)sender {
     if (sender.tag == 39) {
-        
+        [self.tfStudent becomeFirstResponder];
     } else if (sender.tag == 40) {
-        
+        [self.tfBMonth becomeFirstResponder];
     } else if (sender.tag == 41) {
-        
+        [self.tfBDay becomeFirstResponder];
     } else if (sender.tag == 42) {
-        
+        [self.tfBYear becomeFirstResponder];
     }
 }
 
@@ -183,7 +200,7 @@
         RegisterLbl.textColor = [UIColor whiteColor];
         birthdayLbl.textColor = [UIColor whiteColor];
         [closeBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [_professHeight2 setConstant:85];
+        [_professHeight2 setConstant:105];
         [proView setHidden:NO];
     }
     else if (sender.tag == 22){
@@ -210,7 +227,7 @@
         viewHe -= 135;
 
     if (_professHeight2.constant == 0)
-        viewHe -= 85;
+        viewHe -= 105;
     
     _viewHeight.constant = viewHe;
     
@@ -221,6 +238,78 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+//Picker view delegates for AGE
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView; {
+    return 1;
+}
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component; {
+    return [self.pickerArray count];
+}
+
+-(NSString*) pickerView:(UIPickerView*)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+    return [self.pickerArray objectAtIndex:row];
+}
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component; {
+    NSString * lab = [[NSString alloc]initWithFormat:@"%@",[self.pickerArray objectAtIndex:row]];
+    
+    if (getSelectedTf == 11) {
+        self.tfStudent.text = lab;
+    }
+    else if (getSelectedTf == 12) {
+        self.tfBMonth.text = lab;
+    }
+    else if (getSelectedTf == 13) {
+        self.tfBDay.text = lab;
+    }
+    else if (getSelectedTf == 14) {
+        self.tfBYear.text = lab;
+    }
+    
+//    [self.view endEditing:YES];
+}
+
+-(UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view {
+    
+    UILabel* tView = (UILabel*)view;
+    if (!tView)
+    {
+        CGRect frame = CGRectMake(0.0, 0.0, 300, 30);
+        tView = [[UILabel alloc] initWithFrame:frame];
+        tView.font = [UIFont fontWithName:@"Helvetica" size:14];
+        tView.textAlignment = NSTextAlignmentCenter;
+    }
+    if (getSelectedTf == 11) {
+        self.tfStudent.inputView = pickerView;
+    }
+    else if (getSelectedTf == 12) {
+        self.tfBMonth.inputView = pickerView;
+    }
+    else if (getSelectedTf == 13) {
+        self.tfBDay.inputView = pickerView;
+    }
+    else if (getSelectedTf == 14) {
+        self.tfBYear.inputView = pickerView;
+    }    
+    tView.text=[self.pickerArray objectAtIndex:row];
+    return tView;
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    getSelectedTf = textField.tag;
+    
+    if (textField.tag == 11)
+        self.pickerArray = [NSMutableArray arrayWithArray:[WViewUtility getSchoolArrayForProfile]];
+    else if (textField.tag == 12)
+        self.pickerArray = [NSMutableArray arrayWithArray:[WViewUtility getMonthsArray]];
+    else if (textField.tag == 13)
+        self.pickerArray = [WViewUtility getArrayOfNumbersWithLimit:31];
+    else if (textField.tag == 14)
+        self.pickerArray = [WViewUtility getYearArray];
+}
+
+- (void)textFieldDidEndEditing:(UITextField*)textField {
+    [self.pickerAge selectRow:0 inComponent:0 animated:NO];
+}
 
 @end
 

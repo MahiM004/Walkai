@@ -23,10 +23,11 @@
     [[IQKeyboardManager sharedManager]disableToolbarInViewControllerClass:[WPostWireVC class]];
     [[IQKeyboardManager sharedManager]disableDistanceHandlingInViewControllerClass:[WPostWireVC class]];
     _postTV.layer.borderColor = colorW.CGColor;
-    
+    /*
     UIButton * crossBtn = [self.view viewWithTag:14];
     UIImage *iconCross = [UIImage imageWithIcon:@"fa-times" backgroundColor:[UIColor clearColor] iconColor:[UIColor whiteColor] andSize:CGSizeMake(26, 26)];
     [crossBtn setImage:iconCross forState:UIControlStateNormal];
+     */
 }
 
 -(void)viewDidAppear:(BOOL)animated {

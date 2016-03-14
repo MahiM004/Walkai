@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "WLaunchScreen.h"
 @interface AppDelegate ()
 
 @end
@@ -16,9 +16,6 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
-   
-
 
     if ([[WSettings sessionSettings]isUserLoggedIn]) {
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
@@ -29,5 +26,22 @@
     
     return YES;
 }
+
+- (void)backToInitialViewControllerFrom:(UIViewController *)viewController {
+    UIStoryboard *mainStoryBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    WLaunchScreen *initial = [mainStoryBoard instantiateViewControllerWithIdentifier:@"launchVC"];
+    self.window.rootViewController = initial;
+    for (UIView *subview in self.window.subviews) {
+        if ([subview isKindOfClass:NSClassFromString(@"UITransitionView")]) {
+            [subview removeFromSuperview];
+        }
+    }
+    [viewController dismissViewControllerAnimated:NO completion:^{
+        [viewController.view removeFromSuperview];
+    }];
+}
+
+
+
 
 @end

@@ -14,5 +14,5 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
-
+- (void)backToInitialViewControllerFrom:(UIViewController *)viewController;
 @end
